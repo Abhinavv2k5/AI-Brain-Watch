@@ -138,6 +138,7 @@ if selected == 'Home':
         Let’s take a step towards proactive brain health.
         Try it now and get insights in seconds.
         """)
+    app()
 
 
 if selected == 'About US':
@@ -195,6 +196,7 @@ if selected == 'About US':
         st.write("""
         Thank you for choosing **AI Brain-Watch**. Together, we can take a step toward proactive brain health.
         """)
+    app()
 
 
 
@@ -325,6 +327,7 @@ if selected=='Alzhiemer Detection':
                       # Create and display the download link
                      html = create_download_link(pdf.output(dest="S").encode("latin-1"), "test")
                      st.markdown(html, unsafe_allow_html=True)
+app()              
 
 
 
