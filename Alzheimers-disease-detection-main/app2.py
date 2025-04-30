@@ -27,7 +27,7 @@ def set_background(image_path):
 
 # Load the model
 try:
-    model = tf.keras.models.load_model('my_model.h5')
+    model = tf.keras.models.load_model('Alzheimers-disease-detection-main/my_model.h5')
 except Exception as e:
     st.error(f"Model failed to load: {e}")
     model = None
@@ -40,7 +40,7 @@ with st.sidebar:
 # Home Page
 if selected == "Home":
     def app():
-        set_background("images/bg7.jpg")
+        set_background("Alzheimers-disease-detection-main/images/bg7.jpg")
         st.title("🧠 AI Brain-Watch: Catching Alzheimer's Early!")
         st.write("""
             Welcome to our Alzheimer's Detection App!
