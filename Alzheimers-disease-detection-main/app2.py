@@ -54,10 +54,10 @@ def set_background(png_file):
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-set_background('Alzheimers-disease-detection-main\\images\\bg7.jpg')
+set_background('Alzheimers-disease-detection-main/images/bg7.jpg')
 
 # Load the saved model
-model = tf.keras.models.load_model('Alzheimers-disease-detection-main\my_model.h5')
+model = tf.keras.models.load_model('Alzheimers-disease-detection-main/my_model.h5')
 
 # Define the class labels
 class_labels = ['Mild Demented', 'Moderate Demented',
